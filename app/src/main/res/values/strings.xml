@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="person_name">Kathlean Huang</string>
+    <string name="fly_A">NEW YORK CITY</string>
+    <string name="DEPART">DEPART</string>
+    <string name="BOARDING_BEGINS">BOARDING_BEGINS</string>
+    <string name="SEA">SEA</string>
+    <string name="seattle">SEATTLE</string>
+    <string name="arrive">ARRIVE</string>
+    <string name="date">DATE</string>
+    <string name="seat">SEAT</string>
+    <string name="flight">FLIGHT</string>
+</resources>

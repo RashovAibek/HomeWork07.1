@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/delta_ig"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/delta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Passenger_name"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Passenger"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delta_ig" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/person_name"
+        android:textColor="#9E9E9E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Passenger_name"
+        app:layout_constraintTop_toBottomOf="@+id/delta_ig"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="28dp"
+        android:background="#2A46FF"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/container2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/JFK_A"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="JFK"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/fly_A"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="@string/DEPART"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="8:00AM"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="28dp"
+        android:background="#2A46FF"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/container"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/SEA"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="SEA"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/seattle"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="@string/arrive"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="11;17AM"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/begins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/BOARDING_BEGINS"
+        android:textColor="#A1A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="7:30AM"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/begins"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/date"
+        android:textColor="#A1A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time" />
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="D4"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Date" />
+
+    <TextView
+        android:id="@+id/SEAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/seat"
+        android:textColor="#A1A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time2" />
+    <TextView
+        android:id="@+id/C3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="3C"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SEAT" />
+
+    <TextView
+        android:id="@+id/FLIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/flight"
+        android:textColor="#A1A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container2" />
+
+    <TextView
+        android:id="@+id/cods"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="215dp"
+        android:text="D2218"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FLIGHT"
+        android:layout_width="wrap_content" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cods"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"
+
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
